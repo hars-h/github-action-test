@@ -15,12 +15,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      env:
+        TG : ${{ github.event.inputs.tags }}
       - name: Checkout
         uses: actions/checkout@v1
 
       - name: List Alerts
         run: |
-          TG = ${{ github.event.inputs.tags }}
           chmod +x ./ts.sh
           ./ts.sh
 

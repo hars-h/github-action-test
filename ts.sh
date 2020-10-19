@@ -1,2 +1,2 @@
 echo "In ts.sh"
-echo TG
+echo $TG
