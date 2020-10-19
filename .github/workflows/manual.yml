@@ -18,3 +18,7 @@ jobs:
     - run: |
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}" 
+
+        export tag =  ${{ github.event.inputs.tags }}
+        chmod +x ./ts.sh
+         ./ts.sh
