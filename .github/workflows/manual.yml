@@ -21,7 +21,6 @@ jobs:
       - name: List Alerts
         run: |
           TG = ${{ github.event.inputs.tags }}
-          export TG
           chmod +x ./ts.sh
           ./ts.sh
 
