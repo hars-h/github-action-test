@@ -11,15 +11,18 @@ on:
       tags:
         description: 'Test scenario tag'  
 
-jobs:
-  printInputs:
+jobs: 
+  build:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo "Log level: ${{ github.event.inputs.logLevel }}"
-        echo "Tags: ${{ github.event.inputs.tags }}" 
-        echo "PWD: ${pwd}"
-        echo "LS: ${ls}"
+      - name: Checkout
+        uses: actions/checkout@v1 
+        
+      - run: |
+          echo "Log level: ${{ github.event.inputs.logLevel }}"
+          echo "Tags: ${{ github.event.inputs.tags }}" 
+          echo "PWD: ${pwd}"
+          echo "LS: ${ls}"
 #        export tag =  ${{ github.event.inputs.tags }}
 #        chmod +x ./ts.sh
 #         ./ts.sh
