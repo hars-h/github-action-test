@@ -19,6 +19,7 @@ jobs:
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}" 
         echo "PWD: ${pwd}"
+        echo "LS: ${ls}"
 #        export tag =  ${{ github.event.inputs.tags }}
 #        chmod +x ./ts.sh
 #         ./ts.sh
