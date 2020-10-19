@@ -1,2 +1,2 @@
 echo "In ts.sh"
-echo $tag
+echo ${{ github.event.inputs.tags }}
