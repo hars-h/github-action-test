@@ -1,3 +1,4 @@
 echo "In ts.sh"
-TST= "jdp-jda-12-"+$TG
+TMP = "jdp-jda-12-"
+TST = "$TMP$TG"
 echo "Test OUTPUT- $TST"
