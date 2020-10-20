@@ -1,2 +1,3 @@
 echo "In ts.sh"
-echo $TG
+TST= jdp-jda-$TG
+echo $TST
